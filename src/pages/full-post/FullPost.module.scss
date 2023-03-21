@@ -1,0 +1,44 @@
+@import '../../assets/styles/variables.scss';
+
+.fullPost {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.comment {
+  display: flex;
+  gap: 15px;
+}
+.userName {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $black;
+}
+.commentField {
+  resize: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+  &::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $black;
+  }
+  background: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  padding: 11px;
+}

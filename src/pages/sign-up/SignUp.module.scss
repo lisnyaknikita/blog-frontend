@@ -1,0 +1,65 @@
+@import '../../assets/styles/global.scss';
+@import '../../assets/styles/variables.scss';
+
+.wrapper {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  width: 750px;
+  height: 682px;
+  border-radius: 20px;
+  background-color: $btnBg;
+  padding: 40px 98px;
+  box-sizing: border-box;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 85px;
+  }
+  > input {
+    padding: 25px 45px;
+    background-color: $inputBg;
+    border-radius: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: $black;
+    &::placeholder {
+      color: $text;
+    }
+  }
+  input + input {
+    margin-top: 29px;
+  }
+  > button {
+    margin-top: 85px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: $black;
+    border-radius: 20px;
+    background-color: $primary;
+    padding: 17px 42px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #9e99bc;
+    }
+  }
+}

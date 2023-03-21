@@ -1,0 +1,56 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/global.scss';
+
+.tagsBlock {
+  padding: 17px 30px;
+  background-color: $btnBg;
+  width: 379px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 50px;
+}
+.tagsBlockTitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  color: $text;
+  padding-bottom: 13px;
+  margin-bottom: 22px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 379px;
+    height: 1px;
+    background-color: $black;
+    bottom: 0;
+    left: -30px;
+  }
+}
+.tagsBlockList {
+}
+.tagsItem {
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  > button {
+    padding: 3px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: $text;
+    transition: all 0.3s;
+    &:hover {
+      color: $black;
+      background-color: #c8a5e3;
+    }
+  }
+}

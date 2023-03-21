@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/global.scss';
+
+.userInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.userImg {
+  > img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.userDetails {
+}
+.userName,
+.additional {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: $black;
+}

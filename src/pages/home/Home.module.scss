@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/global.scss';
+
+.tabList {
+  display: flex;
+  gap: 40px;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.tabItem {
+  color: $black;
+  background-color: transparent;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: $btnBg;
+  }
+}
+.homeWrapper {
+  display: flex;
+  gap: 120px;
+}

@@ -1,0 +1,80 @@
+@import '../../assets/styles/variables.scss';
+
+.title {
+  margin-top: 35px;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  color: $black;
+  margin-bottom: 30px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: $btnBg;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.uploadBtn {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  color: $black;
+  cursor: pointer;
+  transition: color 0.3s;
+  &:hover {
+    color: #41354d;
+  }
+}
+.titleInput {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  color: $black;
+  margin-bottom: 23px;
+  &::placeholder {
+    color: $text;
+  }
+}
+.tagsInput {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  border-bottom: 1px solid $black;
+  color: $text;
+  margin-bottom: 30px;
+}
+:global {
+  #simplemde-editor-2-wrapper {
+    width: 100% !important;
+  }
+  .editor-toolbar {
+    background-color: $primary;
+  }
+}
+.createBtn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  padding: 15px 50px;
+  background-color: $primary;
+  border-radius: 20px;
+  margin-top: 39px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #9e99bc;
+  }
+}
